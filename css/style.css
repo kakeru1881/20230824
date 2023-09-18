@@ -62,6 +62,15 @@ img {
   color: #333;
 }
 
+.title-detail{
+  font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: .05em;
+    color: #333;
+}
+
 .lead {
   font-size: 16px;
   line-height: 1.8;
@@ -179,10 +188,25 @@ img {
 ---------------------------------*/
 
 #works {
+  position: relative;
+  /* 他のスタイルルールをここに追加 */
+  z-index: 0;
+}
+
+#works::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-image: url('../img/flowerframe1.jpg');
   background-size: cover;
-  /* 画像を要素に合わせて調整 */
+  filter: blur(5px);
+  /* ぼかしの強度を調整（例: 5px） */
 }
+
 
 #works.low-saturation {
   filter: saturate(0.1);
@@ -199,11 +223,13 @@ img {
   width: 31.74603%;
   margin-right: 1.58730%;
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffff;
+  transition: 0.3s;
 }
 
 .works-item:hover {
-  opacity: .9;
+  transform: scale(1.05);
+  
 }
 
 .works-item:nth-of-type(3n) {
@@ -280,10 +306,27 @@ Menu
 }
 
  #menu {
-   background-image: url('../img/flower1.jpg');
-   background-size: cover;
-   /* 画像を要素に合わせて調整 */
+  position: relative;
+    /* 他のスタイルルールをここに追加 */
+    z-index: 0;
  }
+
+#menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../img/flower1.jpg');
+  background-size: cover;
+  filter: blur(5px);
+  /* ぼかしの強度を調整（例: 5px） */
+}
+#detail.menu {
+  background-color: white;
+}
 
 /*--------------------------------
 skill
