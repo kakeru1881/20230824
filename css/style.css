@@ -156,13 +156,17 @@ img {
   justify-content: center;
   height: 85vh;
   text-align: center;
-    background-size: cover;
-      /* 背景画像を要素に合わせて調整 */
+  background-size: cover;
+  background-position: center center;
+  /* 画像を中央に配置 */
+  /* 背景画像を要素に合わせて調整 */
 }
 
 .mv-container {
   padding: 0 40px;
-  color: #fff;
+  /* color: #fff; */
+  background-color: rgba(255, 216, 235, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .mv-title {
@@ -229,7 +233,7 @@ img {
   margin-bottom: 40px;
   color: #ffffff;
   transition: 0.3s;
-  
+
 }
 
 .works-item:hover {
@@ -244,10 +248,10 @@ img {
 .works-img img {
   border: 1px solid #e6e6e6;
   width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 300px;
-    object-fit: cover;
+  height: auto;
+  max-width: 400px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .works-name {
@@ -337,6 +341,10 @@ Menu
 
 #detail.menu {
   background-color: white;
+}
+
+.detailmenu {
+  margin-bottom: 10px;
 }
 
 /*--------------------------------
@@ -606,6 +614,7 @@ skill
 
   .mv-container {
     padding: 0 20px;
+
   }
 
   .mv-title {
