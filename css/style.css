@@ -62,19 +62,19 @@ img {
   color: #333;
 }
 
-.title-detail{
+.title-detail {
   font-size: 20px;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 20px;
-    letter-spacing: .05em;
-    color: #333;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: .05em;
+  color: #333;
 }
 
 .lead {
   font-size: 16px;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 /*--------------------------------
@@ -140,7 +140,7 @@ img {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #333;
-  
+
 }
 
 .gnav-item a:hover:after {
@@ -156,10 +156,13 @@ img {
   justify-content: center;
   height: 85vh;
   text-align: center;
+    background-size: cover;
+      /* 背景画像を要素に合わせて調整 */
 }
 
 .mv-container {
   padding: 0 40px;
+  color: #fff;
 }
 
 .mv-title {
@@ -187,13 +190,13 @@ img {
  Works
 ---------------------------------*/
 
-#works {
+#gallery {
   position: relative;
   /* 他のスタイルルールをここに追加 */
   z-index: 0;
 }
 
-#works::before {
+#gallery::before {
   content: "";
   position: absolute;
   top: 0;
@@ -201,7 +204,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url('../img/flowerframe1.jpg');
+  /* background-image: url('../img/flowerframe1.jpg'); */
   background-size: cover;
   filter: blur(5px);
   /* ぼかしの強度を調整（例: 5px） */
@@ -212,6 +215,7 @@ img {
   filter: saturate(0.1);
   /* 彩度を低くする場合、値を0から1の間で調整してください */
 }
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -225,11 +229,12 @@ img {
   margin-bottom: 40px;
   color: #ffffff;
   transition: 0.3s;
+  
 }
 
 .works-item:hover {
   transform: scale(1.05);
-  
+
 }
 
 .works-item:nth-of-type(3n) {
@@ -238,6 +243,11 @@ img {
 
 .works-img img {
   border: 1px solid #e6e6e6;
+  width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .works-name {
@@ -305,11 +315,11 @@ Menu
   }
 }
 
- #menu {
+#menu {
   position: relative;
-    /* 他のスタイルルールをここに追加 */
-    z-index: 0;
- }
+  /* 他のスタイルルールをここに追加 */
+  z-index: 0;
+}
 
 #menu::before {
   content: "";
@@ -324,6 +334,7 @@ Menu
   filter: blur(5px);
   /* ぼかしの強度を調整（例: 5px） */
 }
+
 #detail.menu {
   background-color: white;
 }
@@ -435,9 +446,9 @@ skill
   margin-right: 10px;
 }
 
-.contact-text {
+/* .contact-text {
   margin-top: 10px;
-}
+} */
 
 /*--------------------------------
  ページトップ
@@ -550,7 +561,7 @@ skill
   .lead {
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   /* レイアウト */
@@ -570,6 +581,7 @@ skill
   .header .container {
     padding: 15px;
   }
+
   .header-logo {
     font-size: 15px;
     margin-right: 15px;

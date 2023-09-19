@@ -18,25 +18,6 @@ $(function () {
   });
 });
 
-// $('.works-item').magnificPopup({
-//   type: 'image',
-//   gallery: {
-//     enabled: true
-
-//   }
-// });
-
-// $(function () {
-//   $('.works-item').magnificPopup({
-//     delegate: 'a',
-//     type: 'image',
-//     gallery: {
-//       enabled: true,
-//       arrowMarkup: '<span title="%title%" role="button" class="gallery-arrow gallery-arrow-%dir%"></span>'
-//     }
-//   });
-// });
-
 // ポップアップを初期化する
 $(document).ready(function () {
   $('.works-item').magnificPopup({
@@ -47,9 +28,17 @@ $(document).ready(function () {
   });
 });
 
-
-// $(function () {
-//   $('.works-item').magnificPopup({
-//     type: 'image',
-//   });
-// });
+$(document).ready(function () {
+  $(".mv").bgswitcher({
+    images: [
+      "img/img0.jpg",
+      "img/img1.jpg",
+      "img/img2.jpg",
+      // "img/img4.jpg",
+    ],
+    effect: "fade",
+    easing: "swing",
+    interval: 5000,
+    loop: true
+  });
+});
