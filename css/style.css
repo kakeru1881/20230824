@@ -165,7 +165,7 @@ img {
 .mv-container {
   padding: 0 40px;
   /* color: #fff; */
-  background-color: rgba(255, 216, 235, 0.7);
+  background-color: rgb(255 134 190 / 70%);
   color: rgb(255, 255, 255);
 }
 
